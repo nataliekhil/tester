@@ -1,0 +1,73 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: gray;
+
+}
+.container {
+  width: 80%;
+  margin:  8vh auto;
+  height: 80vh;
+  border: 1px green solid;
+}
+
+h1,
+h2,
+.nav-titles {
+  font-weight: 300;
+  /*Maybe add the margin-left to here, depending on how we see fit*/
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 14pt;
+  padding: 0;
+  margin: 15px 0;
+}
+
+nav {
+  margin-left: -40px;
+}
+
+li {
+  display: block;
+  height: 15vh;
+  border: 1px brown solid;
+  padding: 0;
+
+  list-style: none;
+  text-indent: 0;
+  width: 100%;
+position: relative;
+}
+
+.nav-titles {
+  left: 30px;
+  position: absolute;
+  margin-top: 20px;
+}
+
+
+@media (min-width: 650px) {
+  ul{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content:flex-start;
+    height: 450px;
+
+  }
+
+  li {
+    height: 100%;
+    margin: auto;
+  }
+
+.nav-titles{
+    bottom: 30px;
+
+  }
+}
