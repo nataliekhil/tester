@@ -4,10 +4,9 @@ body {
 
 }
 .container {
-  width: 80%;
-  margin:  8vh auto;
-  height: 80vh;
-  border: 1px green solid;
+  width: 90%;
+  margin:  10vh auto;
+/*border: 1px green solid;*/
 }
 
 h1,
@@ -19,13 +18,14 @@ h2,
 
 h1 {
   margin: 0;
-  padding: 0;
+  padding: 0  5px 7px 0;
+  border-bottom: 1px gray solid;
+  display: inline-block;
 }
-
 h2 {
   font-size: 14pt;
   padding: 0;
-  margin: 15px 0;
+  margin: 10px 0 20px;
 }
 
 nav {
@@ -35,13 +35,15 @@ nav {
 li {
   display: block;
   height: 15vh;
-  border: 1px brown solid;
+  /*border: 1px brown solid;*/
   padding: 0;
-
+  background-size: cover;
+  color: white;
   list-style: none;
   text-indent: 0;
   width: 100%;
-position: relative;
+  position: relative;
+  font-weight: 400;
 }
 
 .nav-titles {
@@ -49,9 +51,29 @@ position: relative;
   position: absolute;
   margin-top: 20px;
 }
+.yoga {
+  background-image: url(/01_images/nav-yoga.jpg);
+}
 
+.meditation {
+  background-image: url(01_images/nav-meditation.jpg);
+}
+
+.kids-yoga {
+  background-image: url(01_images/nav-kids.jpg);
+}
+
+.about {
+  background-image: url(01_images/nav-about.jpg);
+}
 
 @media (min-width: 650px) {
+.container {
+  width: 80%;
+
+}
+
+
   ul{
     display: flex;
     flex-direction: row;
@@ -68,6 +90,8 @@ position: relative;
 
 .nav-titles{
     bottom: 30px;
-
   }
+
+
+
 }
